@@ -1,0 +1,89 @@
+/****
+ *  General
+ */
+
+section {
+    margin: 1.2rem 0;
+}
+
+
+/*
+ * Wiki
+ */
+
+section#Wiki {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+div#Wiki div div {
+    width: auto;
+}
+
+div#WikiText {
+    flex-shrink: 0;
+    max-width: 100%;
+    min-width: 265px;
+}
+
+div#WikiText a {
+    display: inline-block;
+}
+
+div#WikiText div {
+    align-items: center;
+    display: flex;
+}
+
+div#WikiText div div {
+    display: block;
+    width: 150px;
+}
+
+div#WikiText div div a img {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+div#WikiText div div h3 {
+    margin-top: 0;
+}
+
+div#WikiText div div p {
+    margin-bottom: 0;
+}
+
+div#WikiPics {
+    flex-shrink: 1;
+    margin: 0;
+}
+
+div#WikiPics figure,
+div#WikiPics figure a img,
+div#WikiPics iframe {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+div#WikiPics figure figcaption {
+    display: block;
+    text-align: right;
+}
+
+@media (min-width:1000px) {
+    section#Wiki {
+        flex-wrap: nowrap;
+    }
+    div#WikiPics {
+        margin-left: 1rem;
+    }
+}
+
+
+/*
+ * Video
+ */

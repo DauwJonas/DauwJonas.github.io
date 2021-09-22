@@ -1,0 +1,64 @@
+/****
+ *  General
+ */
+
+
+/*
+ *  Intro
+ */
+
+section#Intro div p {}
+
+section#Intro div>:nth-child(2) {
+    margin-bottom: 0;
+}
+
+section#Intro ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section#Intro ul li p {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+
+/*
+ *  Mods
+ */
+
+section#Mods {}
+
+section#Mods .Mod {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+section#Mods .Mod h4 {
+    text-align: left;
+}
+
+section#Mods .Mod a {
+    text-align: right;
+    width: 30%;
+}
+
+section#Mods .Mod p {
+    margin: .5rem 0;
+}
+
+section#Mods .Mod div {
+    margin-left: .5rem;
+    width: 70%;
+}
+
+@media (min-width:1200px) {
+    section#Mods .Mod div {
+        width: 50%;
+    }
+}

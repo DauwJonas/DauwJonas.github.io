@@ -1,0 +1,67 @@
+/****
+ *  General
+ */
+
+
+/*
+ *  Review
+ */
+
+div#NSFWReviews {
+    align-items: center;
+    background-color: #262626;
+    display: flex;
+    height: 295px;
+    justify-content: center;
+    padding: 10px;
+    width: 540px;
+}
+
+div#NSFWReviews p {
+    text-align: center;
+}
+
+div#NSFWReviews button {
+    background-color: #8b0000;
+    border: 2px solid #640000;
+    color: #AFAFAF;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 1rem auto;
+    padding: 10px;
+    width: fit-content;
+}
+
+div#NSFWReviews button:hover,
+div#NSFWReviews button:focus {
+    background-color: #640000;
+    border: 2px solid #8b0000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section#Reviews .NSFW {
+    display: none;
+}
+
+
+/*
+ *  MyOpinion
+ */
+
+
+/*
+ *  FunVideos
+ */
+
+
+/*
+section#FunVideos div {
+    height: auto;
+}
+*/
+
+section#FunVideos p {
+    text-align: center;
+}

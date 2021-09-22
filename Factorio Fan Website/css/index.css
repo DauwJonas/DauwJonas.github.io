@@ -1,0 +1,95 @@
+/****
+ *  General
+ */
+
+
+/*
+ *  DescriptionFactorio
+ */
+
+section#DescriptionFactorio h3 {
+    text-align: left;
+}
+
+
+/* Flex */
+
+section#DescriptionFactorio {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#DescriptionFactorio a:first-child {
+    flex-shrink: 1;
+    min-width: 60%;
+}
+
+section#DescriptionFactorio img {
+    display: inline-block;
+    width: 100%;
+}
+
+section#DescriptionFactorio div {
+    flex-shrink: 1;
+    margin: 0;
+}
+
+section#DescriptionFactorio div h3:first-child {
+    margin-top: .83em;
+}
+
+section#DescriptionFactorio div blockquote {
+    margin: 0;
+}
+
+@media (min-width:1000px) {
+    section#DescriptionFactorio {
+        flex-wrap: nowrap;
+    }
+    section#DescriptionFactorio div {
+        margin-left: .5rem;
+    }
+    section#DescriptionFactorio div h3:first-child {
+        margin-top: 0;
+    }
+}
+
+
+/*
+ *  Trailer
+ */
+
+
+/*
+ *  Buy
+ */
+
+section#Buy div>div * {
+    display: block;
+}
+
+section#Buy {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#Buy div.Steam iframe {
+    height: 19rem;
+    max-width: 100%;
+    width: 64.6rem;
+}
+
+section#Buy div.GoG iframe {
+    height: 22rem;
+    max-width: 100%;
+    width: 36rem;
+}
+
+section#Buy div.FactorioWebSite img {
+    max-width: 100%;
+    max-width: 50rem;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        (function(w, d, s, i) {
+            function load() {
+                var elScript = d.createElement(s);
+                elScript.type = 'text/javascript';
+                elScript.async = true;
+                elScript.src = 'https://api.gog.com/v1/distributors/widget-latest.js'
+                elTarget = d.getElementsByTagName(s)[0];
+                elTarget.parentNode.insertBefore(elScript, elTarget);
+                w['gogWidgetDistributorId'] = i;
+            }
+            if (w.attachEvent)
+                w.attachEvent('onload', load);
+            else
+                w.addEventListener('load', load, false);
+        })(window, window.document, 'script', '52756712356612660')
+    </script>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gog-widget" data-game="1238653230"></div>
+</body>
+
+</html>
