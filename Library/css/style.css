@@ -95,6 +95,10 @@ iframe {
     border-width: 0;
 }
 
+.DisplayNone {
+    display: none;
+}
+
 
 /****
  *  Header
@@ -410,16 +414,6 @@ div.OfficialLink {
 div.OfficialLink p {
     margin: 0;
     text-align: center;
-}
-
-footer div.Test span {}
-
-footer div.Test span:first-child {
-    color: rgb(204 204 0);
-}
-
-footer div.Test span:last-child {
-    color: var(--DJ-Link-color);
 }
 
 
