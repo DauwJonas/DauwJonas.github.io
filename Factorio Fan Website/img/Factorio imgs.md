@@ -4,6 +4,10 @@
 
 ![Logo](https://factorio.com/static/img/factorio-logo.png)
 
+### Small
+
+![Logo Small](https://factorio.com/static/img/favicon.ico)
+
 ## Pics
 
 ### Ingame artwork
