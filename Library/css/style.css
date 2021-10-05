@@ -24,6 +24,7 @@ img {
     --DJ-color: #AFAFAF;
     --DJ-font-family: 'Gelasio', serif;
     --DJ-font-size: 2rem;
+    --DJ-selection: rgb(0 60 60);
     /** Link */
     --DJ-Link-color: rgb(0 175 0);
     --DJ-Link-Hover_Select-color: rgb(0 225 0);
@@ -39,6 +40,10 @@ img {
 
 /****
  *  General
+ */
+
+
+/* Elements
  */
 
 body {
@@ -61,7 +66,7 @@ h4 {
 }
 
 ::selection {
-    background-color: #D85D00;
+    background-color: var(--DJ-selection);
 }
 
 a {
@@ -86,14 +91,22 @@ a.img {
     text-decoration: none;
 }
 
+button,
 input,
 textarea {
     font-family: inherit;
 }
 
+button,
+.button {}
+
 iframe {
     border-width: 0;
 }
+
+
+/* Class
+ */
 
 .DisplayNone {
     display: none;
@@ -123,6 +136,7 @@ header {
 .WebsiteLogo {
     display: inline-block;
     margin: .2rem .5rem;
+    padding: .25rem;
     width: fit-content;
     /*Logo in Background*/
     background-image: url(/Dauw_Jonas/img/icon/Dauw_Jonas/2x2.ico);
@@ -259,8 +273,6 @@ main div.Item h4 {
 .Img-Text.Med div h3:first-child {
     margin-top: 0;
 }
-
-.Img-Text.Med p {}
 
 .Img-Text.Med a {
     display: block;
@@ -404,7 +416,6 @@ footer div {
 
 footer a {
     display: inline-block;
-    margin: .5rem;
 }
 
 div.OfficialLink {
