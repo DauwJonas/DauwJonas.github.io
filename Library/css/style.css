@@ -18,23 +18,23 @@ img {
 
 :root {
     /* General */
-    --DJ-background-color: #191919;
-    --DJ-background-color2: #262626;
+    --DJ-background-color: rgb(25, 25, 25);
+    --DJ-background-color2: rgb(38, 38, 38);
     /* Text */
-    --DJ-color: #AFAFAF;
+    --DJ-color: rgb(175, 175, 175);
     --DJ-font-family: 'Gelasio', serif;
     --DJ-font-size: 2rem;
-    --DJ-selection: rgb(0 60 60);
+    --DJ-selection: rgba(0, 60, 60, .8);
     /** Link */
-    --DJ-Link-color: rgb(0 175 0);
-    --DJ-Link-Hover_Select-color: rgb(0 225 0);
+    --DJ-Link-color: rgb(0, 175, 0);
+    --DJ-Link-Hover_Select-color: rgb(0, 225, 0);
     /* Input Text */
-    --DJ-input-text-background-color: #262626;
-    --DJ-input-text-border-color: #34393D;
+    --DJ-input-text-background-color: rgb(38, 38, 38);
+    --DJ-input-text-border-color: rgb(52, 57, 61);
     /** Button */
-    --DJ-button-background-color: #82471A;
-    --DJ-button-border-color: #592D10;
-    --DJ-button-color: #D1D1D1;
+    --DJ-button-background-color: rgb(0, 95, 0);
+    --DJ-button-border-color: rgb(0, 60, 0);
+    --DJ-button-color: rgb(210, 210, 210);
 }
 
 
@@ -95,11 +95,30 @@ button,
 input,
 textarea {
     font-family: inherit;
+    font-size: inherit;
 }
 
 button,
 .button {
-    /*++++*/
+    background-color: var(--DJ-button-background-color);
+    border-color: var(--DJ-button-border-color);
+    border-radius: .75rem;
+    border-style: solid;
+    border-width: .4rem;
+    color: var(--DJ-button-color);
+    font-weight: bold;
+    padding: .5rem 1.5rem;
+    transition-duration: .15s;
+    text-decoration: none;
+}
+
+button:hover,
+.button:hover,
+button:focus,
+.button:focus {
+    background-color: var(--DJ-button-border-color);
+    border-color: var(--DJ-button-background-color);
+    color: var(--DJ-Link-Hover_Select-color);
 }
 
 iframe {

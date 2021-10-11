@@ -1,25 +1,43 @@
 /****
+ *  Vars & root
+ */
+
+:root {
+    /* Text */
+    --DJ-selection: #d85d00cc;
+    /** Link */
+    --DJ-Link-color: #ff7200;
+    --DJ-Link-Active-color: #ad4f02;
+    --DJ-Link-Hover_Select-color: #ff9946;
+    /** Button */
+    --DJ-button-background-color: #82471A;
+    --DJ-button-border-color: #592D10;
+    --DJ-button-color: #D1D1D1;
+}
+
+
+/****
  *  General
  */
 
 ::selection {
-    background-color: #D85D00;
+    background-color: var(--DJ-selection);
 }
 
 a {
-    color: #ff7200;
+    color: var(--DJ-Link-color);
 }
 
 a.active {
-    color: #ad4f02;
+    color: var(--DJ-Link-Active-color);
 }
 
 a:hover {
-    color: #ff9946;
+    color: var(--DJ-Link-Hover_Select-color);
 }
 
 :focus {
-    outline: 2px solid #ff9946;
+    outline: 2px solid var(--DJ-Link-Hover_Select-color);
     /*outline-offset: -2px;*/
 }
 
@@ -57,7 +75,3 @@ div.WebsiteLogo h1 {
 /****
  *  Footer
  */
-
-footer {
-    background-color: #262626;
-}
