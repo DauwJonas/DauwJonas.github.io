@@ -1,0 +1,31 @@
+/*
+ *  Logo
+ */
+
+.WebsiteLogo {
+    display: inline-block;
+    margin: .2rem .5rem;
+    padding: .25rem;
+    width: fit-content;
+    /*Logo in Background*/
+    background-image: url(/Dauw_Jonas/img/icon/Dauw_Jonas/2x2.ico);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+}
+
+.WebsiteLogo a {
+    text-decoration: none;
+}
+
+.WebsiteLogo h1 {
+    color: var(--DJ-Link-color);
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0;
+    /* old
+    text-shadow: .5rem -.1rem .2rem rgb(0 10 0);
+    */
+    text-shadow: 0 0 .5rem rgb(0 10 0);
+    -webkit-text-stroke: .1rem rgb(0 50 0);
+}

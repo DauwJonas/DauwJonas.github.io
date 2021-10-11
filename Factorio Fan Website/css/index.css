@@ -66,30 +66,7 @@ section#DescriptionFactorio div blockquote {
  *  Buy
  */
 
-section#Buy div>div * {
-    display: block;
-}
-
-section#Buy {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-section#Buy div.Steam iframe {
-    height: 19rem;
-    max-width: 100%;
-    width: 64.6rem;
-}
-
-section#Buy div.GoG iframe {
-    height: 22rem;
-    max-width: 100%;
-    width: 36rem;
-}
-
 section#Buy div.FactorioWebSite img {
+    width: 50rem;
     max-width: 100%;
-    max-width: 50rem;
 }
