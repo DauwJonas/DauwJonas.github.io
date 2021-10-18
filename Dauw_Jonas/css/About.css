@@ -1,16 +1,22 @@
 /***
- * Contact
+ *  Main
  */
 
-section#Contact {
+main {
     text-align: center;
 }
 
-section#Contact a img {
+p a img {
     max-height: var(--DJ-font-size);
+    position: relative;
+    top: .4rem;
 }
 
-section#Contact a img.Twitter {
+img.Ko-fi {
+    border-radius: 50%;
+}
+
+img.Twitter {
     /*Thanks for the filter color to: https://codepen.io/sosuke/pen/Pjoqqp */
     /*Color #1ca0f2*/
     filter: invert(58%) sepia(19%) saturate(6374%) hue-rotate(176deg) brightness(95%) contrast(101%);
