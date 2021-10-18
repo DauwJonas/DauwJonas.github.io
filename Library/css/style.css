@@ -17,24 +17,48 @@ img {
  */
 
 :root {
+    /*
+     * Dauw_Jonas Default Vars
+     */
     /* General */
-    --DJ-background-color: rgb(25, 25, 25);
-    --DJ-background-color2: rgb(38, 38, 38);
+    --DJ-D-background-color: rgb(25, 25, 25);
+    --DJ-D-background-color2: rgb(38, 38, 38);
     /* Text */
-    --DJ-color: rgb(175, 175, 175);
-    --DJ-font-family: 'Gelasio', serif;
-    --DJ-font-size: 2rem;
-    --DJ-selection: rgba(0, 60, 60, .8);
+    --DJ-D-color: rgb(175, 175, 175);
+    --DJ-D-font-family: 'Gelasio', serif;
+    --DJ-D-font-size: 2rem;
+    --DJ-D-selection: rgba(0, 60, 60, .8);
     /** Link */
-    --DJ-Link-color: rgb(0, 175, 0);
-    --DJ-Link-Hover_Select-color: rgb(0, 225, 0);
+    --DJ-D-Link-color: rgb(0, 175, 0);
+    --DJ-D-Link-Hover_Select-color: rgb(0, 225, 0);
     /* Input Text */
-    --DJ-input-text-background-color: rgb(38, 38, 38);
-    --DJ-input-text-border-color: rgb(52, 57, 61);
+    --DJ-D-input-text-background-color: rgb(38, 38, 38);
+    --DJ-D-input-text-border-color: rgb(52, 57, 61);
     /** Button */
-    --DJ-button-background-color: rgb(0, 95, 0);
-    --DJ-button-border-color: rgb(0, 60, 0);
-    --DJ-button-color: rgb(210, 210, 210);
+    --DJ-D-button-background-color: rgb(0, 95, 0);
+    --DJ-D-button-border-color: rgb(0, 60, 0);
+    --DJ-D-button-color: rgb(210, 210, 210);
+    /*
+     * Dauw_Jonas Vars
+     */
+    /* General */
+    --DJ-background-color: var(--DJ-D-background-color);
+    --DJ-background-color2: var(--DJ-D-background-color2);
+    /* Text */
+    --DJ-color: var(--DJ-D-color);
+    --DJ-font-family: var(--DJ-D-font-family);
+    --DJ-font-size: var(--DJ-D-font-size);
+    --DJ-selection: var(--DJ-D-selection);
+    /** Link */
+    --DJ-Link-color: var(--DJ-D-Link-color);
+    --DJ-Link-Hover_Select-color: var(--DJ-D-Link-Hover_Select-color);
+    /* Input Text */
+    --DJ-input-text-background-color: var(--DJ-D-input-text-background-color);
+    --DJ-input-text-border-color: var(--DJ-D-input-text-border-color);
+    /** Button */
+    --DJ-button-background-color: var(--DJ-D-button-background-color);
+    --DJ-button-border-color: var(--DJ-D-button-border-color);
+    --DJ-button-color: var(--DJ-D-button-color);
 }
 
 
@@ -99,7 +123,9 @@ textarea {
 }
 
 button,
-.button {
+.button,
+input[type=submit],
+.submit {
     background-color: var(--DJ-button-background-color);
     border-color: var(--DJ-button-border-color);
     border-radius: .75rem;
@@ -115,10 +141,15 @@ button,
 button:hover,
 .button:hover,
 button:focus,
-.button:focus {
+.button:focus,
+input[type=submit]:hover,
+.submit:hover,
+input[type=submit]:focus,
+.submit:focus {
     background-color: var(--DJ-button-border-color);
     border-color: var(--DJ-button-background-color);
     color: var(--DJ-Link-Hover_Select-color);
+    cursor: pointer;
 }
 
 iframe {
@@ -129,7 +160,7 @@ iframe {
 /* Class
  */
 
-.DisplayNone {
+.displayNone {
     display: none;
 }
 
@@ -145,6 +176,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-block-end: 0.83em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -405,6 +437,7 @@ footer {
     background-color: var(--DJ-background-color2);
     display: flex;
     flex-direction: column;
+    margin-block-start: 0.83em;
     padding: 1rem
 }
 
@@ -413,6 +446,15 @@ footer address a {
     font-style: normal;
     margin: 0;
     text-align: center;
+}
+
+footer address a[href="https://dauwjonas.github.io/Dauw_Jonas/"] {
+    color: var(--DJ-D-Link-color);
+}
+
+footer address a[href="https://dauwjonas.github.io/Dauw_Jonas/"]:hover,
+footer address a[href="https://dauwjonas.github.io/Dauw_Jonas/"]:focus {
+    color: var(--DJ-D-Link-Hover_Select-color);
 }
 
 footer div {
