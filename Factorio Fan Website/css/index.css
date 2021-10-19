@@ -4,65 +4,6 @@
 
 
 /*
- *  DescriptionFactorio
- */
-
-section#DescriptionFactorio h3 {
-    text-align: left;
-}
-
-
-/* Flex */
-
-section#DescriptionFactorio {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-section#DescriptionFactorio a:first-child {
-    flex-shrink: 1;
-    min-width: 60%;
-}
-
-section#DescriptionFactorio img {
-    display: inline-block;
-    width: 100%;
-}
-
-section#DescriptionFactorio div {
-    flex-shrink: 1;
-    margin: 0;
-}
-
-section#DescriptionFactorio div h3:first-child {
-    margin-top: .83em;
-}
-
-section#DescriptionFactorio div blockquote {
-    margin: 0;
-}
-
-@media (min-width:1000px) {
-    section#DescriptionFactorio {
-        flex-wrap: nowrap;
-    }
-    section#DescriptionFactorio div {
-        margin-left: .5rem;
-    }
-    section#DescriptionFactorio div h3:first-child {
-        margin-top: 0;
-    }
-}
-
-
-/*
- *  Trailer
- */
-
-
-/*
  *  Buy
  */
 

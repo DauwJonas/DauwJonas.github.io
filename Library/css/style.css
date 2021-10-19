@@ -268,9 +268,29 @@ main section {
  */
 
 .Img-Text {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.Img-Text h3 {
+    text-align: left;
+}
+
+.Img-Text>*:first-child {
+    align-content: center;
+}
+
+.Img-Text div blockquote {
+    margin: 0;
+}
+
+@media (min-width:1000px) {
+    .Img-Text {
+        flex-wrap: nowrap;
+    }
 }
 
 
@@ -278,10 +298,8 @@ main section {
  */
 
 .Img-Text.Med>*:first-child {
-    align-content: center;
     max-height: 100%;
     max-width: 100%;
-    text-align: center;
 }
 
 .Img-Text.Med img {
@@ -308,9 +326,6 @@ main section {
 }
 
 @media (min-width:1000px) {
-    .Img-Text.Med {
-        flex-wrap: nowrap;
-    }
     .Img-Text.Med>a:first-child {
         max-height: 25%;
         max-width: 50%;
@@ -330,6 +345,28 @@ main section {
 
 /* Big
  */
+
+.Img-Text.Big>* {
+    width: 100%;
+}
+
+.Img-Text.Big>*:first-child {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media (min-width:1000px) {
+    .Img-Text.Big>*:first-child {
+        max-height: 100%;
+        max-width: 60%;
+    }
+    .Img-Text.Big h3 {
+        text-align: left;
+    }
+    .Img-Text.Big>*:nth-child(2) {
+        margin-left: .5rem;
+    }
+}
 
 
 /*
