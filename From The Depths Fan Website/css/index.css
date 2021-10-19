@@ -1,0 +1,12 @@
+#Description>div:first-child {
+    display: flex;
+    /*Flex settings*/
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Description>div:first-child>* {
+    width: 50%;
+}

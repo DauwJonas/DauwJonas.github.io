@@ -1,0 +1,26 @@
+/****
+ *  Vars & root
+ */
+
+:root {
+    /* Text */
+    --DJ-selection: rgba(25, 100, 150, .8);
+    /** Link */
+    --DJ-Link-color: rgb(25, 125, 200);
+    --DJ-Link-Hover_Select-color: rgb(50, 150, 225);
+}
+
+
+/****
+ *  Footer
+ */
+
+footer div.OfficialLink a {
+    max-width: 50vw;
+}
+
+@media (min-width:1200px) {
+    footer div.OfficialLink a {
+        max-width: 33vw;
+    }
+}
