@@ -485,12 +485,12 @@ footer address a {
     text-align: center;
 }
 
-footer address a[href="https://dauwjonas.github.io/Dauw_Jonas/"] {
+footer address a[href="/Dauw_Jonas/"] {
     color: var(--DJ-D-Link-color);
 }
 
-footer address a[href="https://dauwjonas.github.io/Dauw_Jonas/"]:hover,
-footer address a[href="https://dauwjonas.github.io/Dauw_Jonas/"]:focus {
+footer address a[href="/Dauw_Jonas/"]:hover,
+footer address a[href="/Dauw_Jonas/"]:focus {
     color: var(--DJ-D-Link-Hover_Select-color);
 }
 
