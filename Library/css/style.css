@@ -34,10 +34,19 @@ img {
     /* Input Text */
     --DJ-D-input-text-background-color: rgb(38, 38, 38);
     --DJ-D-input-text-border-color: rgb(52, 57, 61);
-    /** Button */
+    /* Button */
     --DJ-D-button-background-color: rgb(0, 95, 0);
     --DJ-D-button-border-color: rgb(0, 60, 0);
     --DJ-D-button-color: rgb(210, 210, 210);
+    /* Scrollbar */
+    --DJ-D-scrollbar-width: 1.5vw;
+    --DJ-D-scrollbar-border-width: .2rem;
+    --DJ-D-scrollbar-thumb-border-radius: 0rem;
+    --DJ-D-scrollbar-track-background-color: rgb(15, 15, 15);
+    --DJ-D-scrollbar-thumb-background-color: rgb(60, 60, 60);
+    --DJ-D-scrollbar-track-background-color_Hover: rgb(80, 80, 80);
+    --DJ-D-scrollbar-track-background-color_Active: rgb(70, 70, 70);
+    --DJ-D-scrollbar-corner-background-color: rgb(20, 20, 20);
     /*
      * Dauw_Jonas Vars
      */
@@ -59,6 +68,15 @@ img {
     --DJ-button-background-color: var(--DJ-D-button-background-color);
     --DJ-button-border-color: var(--DJ-D-button-border-color);
     --DJ-button-color: var(--DJ-D-button-color);
+    /* Scrollbar */
+    --DJ-scrollbar-width: var(--DJ-D-scrollbar-width);
+    --DJ-scrollbar-border-width: var(--DJ-D-scrollbar-border-width);
+    --DJ-scrollbar-thumb-border-radius: var(--DJ-D-scrollbar-thumb-border-radius);
+    --DJ-scrollbar-track-background-color: var(--DJ-D-scrollbar-track-background-color);
+    --DJ-scrollbar-thumb-background-color: var(--DJ-D-scrollbar-thumb-background-color);
+    --DJ-scrollbar-track-background-color_Hover: var(--DJ-D-scrollbar-track-background-color_Hover);
+    --DJ-scrollbar-track-background-color_Active: var(--DJ-D-scrollbar-track-background-color_Active);
+    --DJ-scrollbar-corner-background-color: var(--DJ-D-scrollbar-corner-background-color);
 }
 
 
@@ -154,6 +172,34 @@ input[type=submit]:focus,
 
 iframe {
     border-width: 0;
+}
+
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+    width: var(--DJ-scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--DJ-scrollbar-track-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--DJ-scrollbar-thumb-background-color);
+    border-radius: var(--DJ-scrollbar-thumb-border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--DJ-scrollbar-track-background-color_Hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--DJ-scrollbar-track-background-color_Active);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--DJ-scrollbar-corner-background-color);
 }
 
 
