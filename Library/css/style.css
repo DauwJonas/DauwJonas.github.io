@@ -39,7 +39,7 @@ img {
     --DJ-D-button-border-color: rgb(0, 60, 0);
     --DJ-D-button-color: rgb(210, 210, 210);
     /* Scrollbar */
-    --DJ-D-scrollbar-width: 1.5vw;
+    --DJ-D-scrollbar-width: inherit;
     --DJ-D-scrollbar-border-width: .2rem;
     --DJ-D-scrollbar-thumb-border-radius: 0rem;
     --DJ-D-scrollbar-track-background-color: rgb(15, 15, 15);
