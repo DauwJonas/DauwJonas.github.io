@@ -26,7 +26,7 @@ function DualArray(Diamention1, Diamention2) {
     return dualArray;
 }
 
-//ToBool & BoolTo
+//#region ToBool & BoolTo
 function ToBool(value) {
     switch (typeof value) {
         case "string":
@@ -76,7 +76,22 @@ function BoolToString(value) {
         return "0";
     }
 }
+//#region 
 
 function CapitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function ReadFile(url) {
+    let fileData;
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url, false);
+    xhr.onreadystatechange = function() {
+        if (this.readyState !== 4) return;
+        if (this.status !== 200) return;
+        fileData = this.responseText;
+    };
+    xhr.onerror = function() {};
+    xhr.send();
+    return fileData;
 }
