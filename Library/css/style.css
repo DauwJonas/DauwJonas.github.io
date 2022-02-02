@@ -22,13 +22,15 @@ img {
      */
     /* General */
     --DJ-D-background-color: rgb(25, 25, 25);
+    --DJ-D-background-color1: var(--DJ-D-background-color);
     --DJ-D-background-color2: rgb(38, 38, 38);
+    --DJ-D-background-color3: rgb(45, 45, 45);
     /* Text */
     --DJ-D-color: rgb(175, 175, 175);
     --DJ-D-font-family: 'Gelasio', serif;
     --DJ-D-font-size: 2rem;
     --DJ-D-selection: rgba(0, 60, 60, .8);
-    /** Link */
+    /* Link */
     --DJ-D-Link-color: rgb(0, 175, 0);
     --DJ-D-Link-Hover_Select-color: rgb(0, 225, 0);
     /* Input Text */
@@ -38,6 +40,7 @@ img {
     --DJ-D-button-background-color: rgb(0, 95, 0);
     --DJ-D-button-border-color: rgb(0, 60, 0);
     --DJ-D-button-color: rgb(210, 210, 210);
+    --DJ-D-button-color_Hover: rgb(210, 210, 210);
     /* Scrollbar */
     --DJ-D-scrollbar-width: inherit;
     --DJ-D-scrollbar-border-width: .2rem;
@@ -52,22 +55,24 @@ img {
      */
     /* General */
     --DJ-background-color: var(--DJ-D-background-color);
+    --DJ-background-color1: var(--DJ-D-background-color1);
     --DJ-background-color2: var(--DJ-D-background-color2);
     /* Text */
     --DJ-color: var(--DJ-D-color);
     --DJ-font-family: var(--DJ-D-font-family);
     --DJ-font-size: var(--DJ-D-font-size);
     --DJ-selection: var(--DJ-D-selection);
-    /** Link */
+    /* Link */
     --DJ-Link-color: var(--DJ-D-Link-color);
     --DJ-Link-Hover_Select-color: var(--DJ-D-Link-Hover_Select-color);
     /* Input Text */
     --DJ-input-text-background-color: var(--DJ-D-input-text-background-color);
     --DJ-input-text-border-color: var(--DJ-D-input-text-border-color);
-    /** Button */
+    /* Button */
     --DJ-button-background-color: var(--DJ-D-button-background-color);
     --DJ-button-border-color: var(--DJ-D-button-border-color);
     --DJ-button-color: var(--DJ-D-button-color);
+    --DJ-button-color_Hover: var(--DJ-D-button-color_Hover);
     /* Scrollbar */
     --DJ-scrollbar-width: var(--DJ-D-scrollbar-width);
     --DJ-scrollbar-border-width: var(--DJ-D-scrollbar-border-width);
@@ -142,6 +147,7 @@ textarea {
 
 button,
 .button,
+.btn,
 input[type=submit],
 .submit {
     background-color: var(--DJ-button-background-color);
@@ -158,15 +164,17 @@ input[type=submit],
 
 button:hover,
 .button:hover,
+.btn:hover,
 button:focus,
 .button:focus,
+.btn:focus,
 input[type=submit]:hover,
 .submit:hover,
 input[type=submit]:focus,
 .submit:focus {
     background-color: var(--DJ-button-border-color);
     border-color: var(--DJ-button-background-color);
-    color: var(--DJ-Link-Hover_Select-color);
+    color: var(--DJ-button-color_Hover);
     cursor: pointer;
 }
 
@@ -208,6 +216,18 @@ iframe {
 
 .displayNone {
     display: none;
+}
+
+.btn-low {
+    background-color: var(--DJ-background-color2);
+    border-color: var(--DJ-background-color3);
+    font-weight: normal;
+}
+
+.btn-low:hover,
+.btn-low:focus {
+    background-color: var(--DJ-background-color3);
+    border-color: var(--DJ-background-color2);
 }
 
 
@@ -577,10 +597,3 @@ iframe.GoG {
     max-width: 100%;
     width: 36rem;
 }
-
-
-/****
- * Test
- */
-
-.Test2 {}
