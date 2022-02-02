@@ -5,7 +5,7 @@
 :root {
     /* Text */
     --DJ-selection: rgba(25, 100, 150, .8);
-    /** Link */
+    /* Link */
     --DJ-Link-color: rgb(25, 125, 200);
     --DJ-Link-Hover_Select-color: rgb(50, 150, 225);
 }
