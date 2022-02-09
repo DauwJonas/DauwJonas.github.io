@@ -12,7 +12,7 @@
 
 ### Ingame artwork
 
-![Hor](http://eu1.factorio.com/assets/img/blog/fff-310-factorio-cover-017-stable.png)
+![Hor](https://webcdn.factorio.com/assets/img/blog/fff-310-factorio-cover-017-stable.png)
 ![Ver](https://cdn.factorio.com/assets/img/artwork/factorio-cover.png)
 ![Hor](https://cdn.factorio.com/assets/img/artwork/0.16-stable.jpg)
 ![Rocket in forest](https://cdn.factorio.com/assets/img/artwork/kovarex-playtest.jpg)
