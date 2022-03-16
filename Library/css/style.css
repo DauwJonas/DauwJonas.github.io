@@ -148,6 +148,7 @@ textarea {
 button,
 .button,
 .btn,
+input[type=button],
 input[type=submit],
 .submit {
     background-color: var(--DJ-button-background-color);
@@ -163,14 +164,16 @@ input[type=submit],
 }
 
 button:hover,
-.button:hover,
-.btn:hover,
 button:focus,
-.button:focus,
-.btn:focus,
+input[type=button]:hover,
+input[type=button]:focus,
 input[type=submit]:hover,
-.submit:hover,
 input[type=submit]:focus,
+.button:hover,
+.button:focus,
+.btn:hover,
+.btn:focus,
+.submit:hover,
 .submit:focus {
     background-color: var(--DJ-button-border-color);
     border-color: var(--DJ-button-background-color);
