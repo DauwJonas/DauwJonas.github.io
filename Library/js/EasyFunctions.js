@@ -3,6 +3,7 @@
  *  By Dauw_Jonas
  */
 
+//#region General Functions
 function Random(min, max) {
     if (min == undefined || max == undefined) {
         return Math.random();
@@ -11,15 +12,15 @@ function Random(min, max) {
     }
 }
 
-function DualArray(Diamention1, Diamention2) {
-    if (Diamention1 == undefined || Diamention2 == undefined) {
-        Diamention1 = 1;
-        Diamention2 = 1;
+function DualArray(Dimension1, Dimension2) {
+    if (Dimension1 == undefined || Dimension2 == undefined) {
+        Dimension1 = 1;
+        Dimension2 = 1;
     }
-    let dualArray = new Array(Diamention1);
-    for (let i = 0; i < Diamention1; i++) {
-        dualArray[i] = new Array(Diamention2);
-        for (let k = 0; k < Diamention2; k++) {
+    let dualArray = new Array(Dimension1);
+    for (let i = 0; i < Dimension1; i++) {
+        dualArray[i] = new Array(Dimension2);
+        for (let k = 0; k < Dimension2; k++) {
             dualArray[i][k] = [];
         }
     }
@@ -76,7 +77,7 @@ function BoolToString(value) {
         return "0";
     }
 }
-//#region 
+//#endregion 
 
 function CapitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -95,3 +96,28 @@ function ReadFile(url) {
     xhr.send();
     return fileData;
 }
+//#endregion
+
+//#region Events
+(function EventLocationChange() {
+    //Thanks to: https://dirask.com/posts/JavaScript-on-location-changed-event-on-url-changed-event-DKeyZj
+    var pushState = history.pushState;
+    var replaceState = history.replaceState;
+
+    history.pushState = function() {
+        pushState.apply(history, arguments);
+        window.dispatchEvent(new Event('pushstate'));
+        window.dispatchEvent(new Event('locationChange'));
+    };
+
+    history.replaceState = function() {
+        replaceState.apply(history, arguments);
+        window.dispatchEvent(new Event('replacestate'));
+        window.dispatchEvent(new Event('locationChange'));
+    };
+
+    window.addEventListener('popstate', function() {
+        window.dispatchEvent(new Event('locationChange'))
+    });
+})();
+//#endregion
