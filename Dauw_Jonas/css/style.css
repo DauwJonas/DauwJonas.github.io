@@ -11,10 +11,8 @@
     background-image: url(/Dauw_Jonas/favicon.ico);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border-radius: 0.25rem;
     image-rendering: pixelated;
-}
-
-.WebsiteLogo a {
     text-decoration: none;
 }
 
@@ -23,7 +21,7 @@
     font-size: 4rem;
     font-weight: 500;
     margin: 0;
-    /* old
+    /* Old
     text-shadow: .5rem -.1rem .2rem rgb(0 10 0);
     */
     text-shadow: 0 0 .5rem rgb(0 10 0);
