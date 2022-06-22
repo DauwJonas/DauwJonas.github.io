@@ -9,4 +9,4 @@ This is my GitHub repository where I keep some of my websites.
     height: 20px;
     ">https://dauwjonas.github.io/</a> -->
 
-![Favicon](Dauw_Jonas/favicon.ico)
+[![Favicon](Dauw_Jonas/favicon.ico)](https://dauwjonas.github.io/)
