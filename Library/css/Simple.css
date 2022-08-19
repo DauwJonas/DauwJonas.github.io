@@ -1,4 +1,24 @@
+:root {
+    /* General */
+    --DJ-background-color: rgb(25, 25, 25);
+    --DJ-background-color1: var(--DJ-background-color);
+    --DJ-background-color2: rgb(38, 38, 38);
+    --DJ-background-color3: rgb(45, 45, 45);
+    /* Text */
+    --DJ-color: rgb(175, 175, 175);
+}
+
 body {
-    background-color: rgb(25, 25, 25);
-    color: rgb(175, 175, 175);
+    background-color: var(--DJ-background-color);
+    color: var(--DJ-color);
+}
+
+button,
+input,
+textarea,
+select {
+    background-color: var(--DJ-background-color2);
+    border-color: var(--DJ-background-color3);
+    font-family: inherit;
+    font-size: inherit;
 }
