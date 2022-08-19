@@ -19,9 +19,8 @@ textarea,
 select {
     background-color: var(--DJ-background-color2);
     border-color: var(--DJ-background-color3);
-    border-radius: 0.75rem;
     border-style: solid;
-    border-width: 0.4rem;
+    border-width: 0.2rem;
     color: var(--DJ-color);
     font-family: inherit;
     font-size: inherit;
