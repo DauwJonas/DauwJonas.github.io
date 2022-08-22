@@ -6,6 +6,7 @@
     --DJ-background-color3: rgb(45, 45, 45);
     /* Text */
     --DJ-color: rgb(175, 175, 175);
+    --DJ-button-color_Hover: rgb(210, 210, 210);
 }
 
 body {
@@ -24,4 +25,16 @@ select {
     color: var(--DJ-color);
     font-family: inherit;
     font-size: inherit;
+}
+
+button:hover,
+button:focus,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
+    background-color: var(--DJ-background-color3);
+    border-color: var(--DJ-background-color2);
+    color: var(--DJ-button-color_Hover);
+    cursor: pointer;
 }
