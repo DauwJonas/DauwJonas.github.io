@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Test Font Familys</title>
     <meta charset="utf-8">
+    <title>Test Font Familys</title>
+    <link href="/Dauw_Jonas/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="description" content="Testing Font Familys.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Links CSS-->
     <link rel="stylesheet" type="text/css" href="/Library/css/style.css">
@@ -37,7 +39,7 @@
                     "Roboto Slab",
                     "Ubuntu",
                     "Ubuntu Mono",
-                    "",
+                    "Noto Sans",
                     "",
                     "",
                     "",
@@ -73,7 +75,9 @@
                 let nEl = document.createElement("link");
                 nEl.href = `https://fonts.googleapis.com/css2?`;
                 fontFamilys.google.forEach(fontFamily => {
-                    nEl.href += `&family=${fontFamily.replace(/[\s-]+/g, '+')}`;
+                    if (fontFamily != "") {
+                        nEl.href += `&family=${fontFamily.replace(/[\s-]+/g, '+')}`;
+                    }
                 });
                 nEl.href += `&display=swap`;
                 nEl.rel = `stylesheet`;
