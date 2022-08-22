@@ -222,14 +222,20 @@ iframe {
     display: none;
 }
 
-.btn-low {
+.btn-low,
+input[type=button].btn-low,
+input[type=submit].btn-low {
     background-color: var(--DJ-background-color2);
     border-color: var(--DJ-background-color3);
     font-weight: normal;
 }
 
 .btn-low:hover,
-.btn-low:focus {
+.btn-low:focus,
+input[type=button].btn-low:hover,
+input[type=button].btn-low:focus,
+input[type=submit].btn-low:hover,
+input[type=submit].btn-low:focus {
     background-color: var(--DJ-background-color3);
     border-color: var(--DJ-background-color2);
 }
