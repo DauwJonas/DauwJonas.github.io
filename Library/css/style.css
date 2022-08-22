@@ -1,6 +1,4 @@
-/****
- *  CSS Reset
- */
+/* #region CSS Reset */
 
 html {
     box-sizing: border-box;
@@ -12,36 +10,40 @@ img {
 }
 
 
-/****
- *  Vars & root
- */
+/* #endregion */
+
+
+/* #region Vars & root */
 
 :root {
-    /*
-     * Dauw_Jonas Default Vars
-     */
-    /* General */
+    /* #region Dauw_Jonas Default Vars */
+    /* #region General */
     --DJ-D-background-color: rgb(25, 25, 25);
     --DJ-D-background-color1: var(--DJ-D-background-color);
     --DJ-D-background-color2: rgb(38, 38, 38);
     --DJ-D-background-color3: rgb(45, 45, 45);
-    /* Text */
+    /* #endregion */
+    /* #region Text */
     --DJ-D-color: rgb(175, 175, 175);
     --DJ-D-font-family: 'Gelasio', serif;
     --DJ-D-font-size: 2rem;
     --DJ-D-selection: rgba(0, 60, 60, .8);
-    /* Link */
+    /* #endregion */
+    /* #region Link */
     --DJ-D-Link-color: rgb(0, 175, 0);
     --DJ-D-Link-Hover_Select-color: rgb(0, 225, 0);
-    /* Input Text */
+    /* #endregion */
+    /* #region Input Text */
     --DJ-D-input-text-background-color: rgb(38, 38, 38);
     --DJ-D-input-text-border-color: rgb(52, 57, 61);
-    /* Button */
+    /* #endregion */
+    /* #region Button */
     --DJ-D-button-background-color: rgb(0, 95, 0);
     --DJ-D-button-border-color: rgb(0, 60, 0);
     --DJ-D-button-color: rgb(210, 210, 210);
     --DJ-D-button-color_Hover: rgb(210, 210, 210);
-    /* Scrollbar */
+    /* #endregion */
+    /* #region Scrollbar */
     --DJ-D-scrollbar-width: inherit;
     --DJ-D-scrollbar-border-width: .2rem;
     --DJ-D-scrollbar-thumb-border-radius: 0rem;
@@ -50,31 +52,36 @@ img {
     --DJ-D-scrollbar-track-background-color_Hover: rgb(80, 80, 80);
     --DJ-D-scrollbar-track-background-color_Active: rgb(70, 70, 70);
     --DJ-D-scrollbar-corner-background-color: rgb(20, 20, 20);
-    /*
-     * Dauw_Jonas Vars
-     */
-    /* General */
+    /* #endregion */
+    /* #endregion */
+    /* #region Dauw_Jonas Vars */
+    /* #region General */
     --DJ-background-color: var(--DJ-D-background-color);
     --DJ-background-color1: var(--DJ-D-background-color1);
     --DJ-background-color2: var(--DJ-D-background-color2);
     --DJ-background-color3: var(--DJ-D-background-color3);
-    /* Text */
+    /* #endregion */
+    /* #region Text */
     --DJ-color: var(--DJ-D-color);
     --DJ-font-family: var(--DJ-D-font-family);
     --DJ-font-size: var(--DJ-D-font-size);
     --DJ-selection: var(--DJ-D-selection);
-    /* Link */
+    /* #endregion */
+    /* #region Link */
     --DJ-Link-color: var(--DJ-D-Link-color);
     --DJ-Link-Hover_Select-color: var(--DJ-D-Link-Hover_Select-color);
-    /* Input Text */
+    /* #endregion */
+    /* #region Input Text */
     --DJ-input-text-background-color: var(--DJ-D-input-text-background-color);
     --DJ-input-text-border-color: var(--DJ-D-input-text-border-color);
-    /* Button */
+    /* #endregion */
+    /* #region Button */
     --DJ-button-background-color: var(--DJ-D-button-background-color);
     --DJ-button-border-color: var(--DJ-D-button-border-color);
     --DJ-button-color: var(--DJ-D-button-color);
     --DJ-button-color_Hover: var(--DJ-D-button-color_Hover);
-    /* Scrollbar */
+    /* #endregion */
+    /* #region Scrollbar */
     --DJ-scrollbar-width: var(--DJ-D-scrollbar-width);
     --DJ-scrollbar-border-width: var(--DJ-D-scrollbar-border-width);
     --DJ-scrollbar-thumb-border-radius: var(--DJ-D-scrollbar-thumb-border-radius);
@@ -83,16 +90,15 @@ img {
     --DJ-scrollbar-track-background-color_Hover: var(--DJ-D-scrollbar-track-background-color_Hover);
     --DJ-scrollbar-track-background-color_Active: var(--DJ-D-scrollbar-track-background-color_Active);
     --DJ-scrollbar-corner-background-color: var(--DJ-D-scrollbar-corner-background-color);
+    /* #endregion */
+    /* #endregion */
 }
 
 
-/****
- *  General
- */
+/* #endregion */
 
 
-/* Elements
- */
+/* #region Elements */
 
 body {
     background-color: var(--DJ-background-color);
@@ -101,6 +107,9 @@ body {
     font-size: var(--DJ-font-size);
     margin: 0;
 }
+
+
+/* #region h */
 
 h1,
 h2,
@@ -113,9 +122,15 @@ h4 {
     margin: 1rem 0;
 }
 
+
+/* #endregion */
+
 ::selection {
     background-color: var(--DJ-selection);
 }
+
+
+/* #region Link */
 
 a {
     color: var(--DJ-Link-color);
@@ -138,6 +153,12 @@ a.img {
     outline: none;
     text-decoration: none;
 }
+
+
+/* #endregion */
+
+
+/* #region Inputs */
 
 button,
 input,
@@ -183,12 +204,15 @@ input[type=submit]:focus,
     cursor: pointer;
 }
 
+
+/* #endregion */
+
 iframe {
     border-width: 0;
 }
 
 
-/*Scrollbar*/
+/* #region Scrollbar */
 
 ::-webkit-scrollbar {
     width: var(--DJ-scrollbar-width);
@@ -216,12 +240,20 @@ iframe {
 }
 
 
-/* Class
- */
+/* #endregion */
+
+
+/* #endregion */
+
+
+/* #region Class */
 
 .displayNone {
     display: none;
 }
+
+
+/* #region btn-low */
 
 .btn-low,
 input[type=button].btn-low,
@@ -242,9 +274,13 @@ input[type=submit].btn-low:focus {
 }
 
 
-/****
- *  Header
- */
+/* #endregion */
+
+
+/* #endregion */
+
+
+/* #region Header */
 
 header {
     background-color: var(--DJ-background-color2);
@@ -259,14 +295,13 @@ header {
 }
 
 
-/*
- *  Logo
- */
+/* #region Logo */
 
 
-/*
- *  Header Nav
- */
+/* #endregion */
+
+
+/* #region Header Nav */
 
 header nav {
     display: inline-block;
@@ -318,9 +353,13 @@ header li:last-child a {
 }
 
 
-/****
- *  Main
- */
+/* #endregion */
+
+
+/* #endregion */
+
+
+/* #region Main */
 
 main {
     margin: 0;
@@ -339,10 +378,7 @@ main section {
 }
 
 
-/*
- * Img-Text
- * Flex
- */
+/* #region Img-Text */
 
 .Img-Text {
     align-items: center;
@@ -371,8 +407,7 @@ main section {
 }
 
 
-/* Med
- */
+/* #region Med */
 
 .Img-Text.Med>*:first-child {
     max-height: 100%;
@@ -420,8 +455,10 @@ main section {
 }
 
 
-/* Big
- */
+/* #endregion */
+
+
+/* #region Big */
 
 .Img-Text.Big>* {
     width: 100%;
@@ -446,9 +483,13 @@ main section {
 }
 
 
-/*
- * VerList - Vertical List
- */
+/* #endregion */
+
+
+/* #endregion */
+
+
+/* #region VerList - Vertical List */
 
 .VerList {
     align-items: center;
@@ -494,9 +535,7 @@ main section {
 }
 
 
-/*
- *  Flex
- */
+/* #region Flex */
 
 .FlexContainer {
     display: flex;
@@ -514,9 +553,13 @@ main section {
 }
 
 
-/*
- *  Videos Flex
- */
+/* #endregion */
+
+
+/* #endregion */
+
+
+/* #region Videos Flex */
 
 .Videos.FlexItem {
     display: flex;
@@ -542,9 +585,13 @@ main section {
 }
 
 
-/****
- *  Footer
- */
+/* #endregion */
+
+
+/* #endregion */
+
+
+/* #region Footer */
 
 footer {
     align-items: center;
@@ -591,9 +638,10 @@ div.OfficialLink p {
 }
 
 
-/**
- * iframe
- */
+/* #endregion */
+
+
+/* #region iframe */
 
 div.Steam iframe,
 iframe.Steam {
@@ -608,3 +656,6 @@ iframe.GoG {
     max-width: 100%;
     width: 36rem;
 }
+
+
+/* #endregion */
