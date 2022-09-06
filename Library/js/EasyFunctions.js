@@ -96,6 +96,18 @@ function ReadFile(url) {
     xhr.send();
     return fileData;
 }
+
+//#region Download
+function Download(src, fileName = "Img", fileExtension = "png") {
+    let nDownloadEl = document.createElement("a");
+    nDownloadEl.setAttribute("download", fileName + "." + fileExtension);
+    nDownloadEl.setAttribute("href", src);
+    nDownloadEl.setAttribute("style", "display:none;")
+    document.body.append(nDownloadEl);
+    nDownloadEl.click();
+    nDownloadEl.remove();
+}
+//#endregion
 //#endregion
 
 //#region Events
