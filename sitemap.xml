@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://dauwjonas.github.io</loc>
+		<priority>1.00</priority>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/From The Depths Fan Website</loc>
+		<priority>0.80</priority>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Factorio Fan Website</loc>
+		<priority>0.80</priority>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Dauw_Jonas</loc>
+		<priority>0.80</priority>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Test/Test Font Familys.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2022-09-28</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Games/Minesweeper</loc>
+		<priority>0.60</priority>
+		<lastmod>2021-10-18</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Factorio Fan Website/Tutorials.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Factorio Fan Website/Reviews-Videos.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Factorio Fan Website/Mods.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Dauw_Jonas/About</loc>
+		<priority>0.60</priority>
+		<lastmod>2022-08-23</lastmod>
+	</url>
+</urlset>
