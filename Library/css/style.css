@@ -5,6 +5,14 @@ html {
     font-size: 62.5%;
 }
 
+html * {
+    box-sizing: inherit;
+}
+
+body * {
+    font-family: inherit;
+}
+
 img {
     max-width: 100%;
 }
@@ -23,6 +31,7 @@ img {
     --DJ-D-background-color1: var(--DJ-D-background-color);
     --DJ-D-background-color2: rgb(38, 38, 38);
     --DJ-D-background-color3: rgb(45, 45, 45);
+    --DJ-D-background-color4: rgb(50, 50, 50);
     /* #endregion */
     /* #region Text */
     --DJ-D-color: rgb(175, 175, 175);
@@ -62,6 +71,7 @@ img {
     --DJ-background-color1: var(--DJ-D-background-color1);
     --DJ-background-color2: var(--DJ-D-background-color2);
     --DJ-background-color3: var(--DJ-D-background-color3);
+    --DJ-background-color4: var(--DJ-D-background-color4);
     /* #endregion */
     /* #region Text */
     --DJ-color: var(--DJ-D-color);
@@ -172,7 +182,6 @@ select {
     border-style: solid;
     border-width: .4rem;
     color: var(--DJ-button-color);
-    font-family: inherit;
     font-size: inherit;
     transition: all .15s, outline-offset 0s, outline 0s;
     text-decoration: none;
@@ -726,6 +735,9 @@ iframe.GoG {
     max-width: 100%;
     width: 36rem;
 }
+
+
+/* #endregion */
 
 
 /* #endregion */
