@@ -18,10 +18,17 @@
         body {
             font-family: sans-serif;
         }
+        
+        h2 {
+            color: rgb(25, 125, 200);
+        }
     </style>
 </head>
 
 <body>
+    <header>
+        <ul></ul>
+    </header>
     <main></main>
     <script type="text/javascript">
         (function() {
@@ -86,9 +93,26 @@
             }
             //Els & content
             {
-                let allFontFamilys = fontFamilys.google.concat(fontFamilys.microsoft);
-                let elMain = document.getElementsByTagName("main")[0];
-                allFontFamilys.forEach(fontFamily => {
+                makeFontH("Google");
+                makeFontTestDiv(fontFamilys.google);
+                makeFontH("Microsoft");
+                makeFontTestDiv(fontFamilys.microsoft);
+            }
+
+            function makeFontH(headerText) {
+                const elUl = document.getElementsByTagName("ul")[0];
+                let nEl = document.createElement("template");
+                nEl.innerHTML = `<li><a href="#${headerText}">${headerText}</a></li>`;
+                elUl.appendChild(nEl.content.firstChild);
+                const elMain = document.getElementsByTagName("main")[0];
+                nEl = document.createElement("template");
+                nEl.innerHTML = `<h2 id="${headerText}">${headerText}</h2>`;
+                elMain.appendChild(nEl.content.firstChild);
+            }
+
+            function makeFontTestDiv(array) {
+                const elMain = document.getElementsByTagName("main")[0];
+                array.forEach(fontFamily => {
                     if (fontFamily != "") {
                         let nEl = document.createElement("template");
                         nEl.innerHTML =
