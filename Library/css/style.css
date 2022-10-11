@@ -1,11 +1,15 @@
 /* #region CSS Reset */
 
 html {
+    border-style: solid;
+    border-width: 0;
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
 html * {
+    border-style: inherit;
+    border-width: inherit;
     box-sizing: inherit;
 }
 
