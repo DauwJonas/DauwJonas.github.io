@@ -6,6 +6,16 @@
 		<lastmod>2022-07-01</lastmod>
 	</url>
 	<url>
+		<loc>https://dauwjonas.github.io/README.md</loc>
+		<priority>0.80</priority>
+		<lastmod>2022-06-22</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/LICENSE.md</loc>
+		<priority>0.80</priority>
+		<lastmod>2021-09-22</lastmod>
+	</url>
+	<url>
 		<loc>https://dauwjonas.github.io/From The Depths Fan Website</loc>
 		<priority>0.80</priority>
 		<lastmod>2022-07-01</lastmod>
@@ -21,14 +31,24 @@
 		<lastmod>2022-07-01</lastmod>
 	</url>
 	<url>
+		<loc>https://dauwjonas.github.io/404.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2021-10-20</lastmod>
+	</url>
+	<url>
 		<loc>https://dauwjonas.github.io/Test/Test Font Familys.html</loc>
 		<priority>0.60</priority>
 		<lastmod>2022-09-28</lastmod>
 	</url>
 	<url>
-		<loc>https://dauwjonas.github.io/Games/Minesweeper</loc>
+		<loc>https://dauwjonas.github.io/Search Engine Indexing/README.md</loc>
 		<priority>0.60</priority>
-		<lastmod>2021-10-18</lastmod>
+		<lastmod>2022-09-28</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/From The Depths Fan Website/README.md</loc>
+		<priority>0.60</priority>
+		<lastmod>2021-10-11</lastmod>
 	</url>
 	<url>
 		<loc>https://dauwjonas.github.io/Factorio Fan Website/Tutorials.html</loc>
@@ -41,13 +61,48 @@
 		<lastmod>2022-07-01</lastmod>
 	</url>
 	<url>
+		<loc>https://dauwjonas.github.io/Factorio Fan Website/README.md</loc>
+		<priority>0.60</priority>
+		<lastmod>2021-09-27</lastmod>
+	</url>
+	<url>
 		<loc>https://dauwjonas.github.io/Factorio Fan Website/Mods.html</loc>
 		<priority>0.60</priority>
 		<lastmod>2022-07-01</lastmod>
 	</url>
 	<url>
+		<loc>https://dauwjonas.github.io/Dauw_Jonas/README.md</loc>
+		<priority>0.60</priority>
+		<lastmod>2021-10-11</lastmod>
+	</url>
+	<url>
 		<loc>https://dauwjonas.github.io/Dauw_Jonas/About</loc>
 		<priority>0.60</priority>
 		<lastmod>2022-08-23</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Library/css/README.md</loc>
+		<priority>0.40</priority>
+		<lastmod>2022-08-18</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/From The Depths Fan Website/img/From The Depths imgs.md</loc>
+		<priority>0.40</priority>
+		<lastmod>2021-10-11</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Factorio Fan Website/img/Factorio imgs.md</loc>
+		<priority>0.40</priority>
+		<lastmod>2022-02-09</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Dauw_Jonas/About/Donate.html</loc>
+		<priority>0.40</priority>
+		<lastmod>2022-07-01</lastmod>
+	</url>
+	<url>
+		<loc>https://dauwjonas.github.io/Library/img/svg/README.md</loc>
+		<priority>0.20</priority>
+		<lastmod>2021-10-15</lastmod>
 	</url>
 </urlset>
