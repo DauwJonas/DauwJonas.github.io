@@ -1,40 +1,50 @@
+html {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html * {
+  border-style: inherit;
+  border-width: inherit;
+  box-sizing: inherit;
+  max-width: 100%;
+}
+html body * {
+  font-family: inherit;
+}
+
 :root {
-    /* General */
-    --DJ-background-color: rgb(25, 25, 25);
-    --DJ-background-color1: var(--DJ-background-color);
-    --DJ-background-color2: rgb(38, 38, 38);
-    --DJ-background-color3: rgb(45, 45, 45);
-    /* Text */
-    --DJ-color: rgb(175, 175, 175);
-    --DJ-button-color_Hover: rgb(210, 210, 210);
+  --DJ-background-color: rgb(25, 25, 25);
+  --DJ-background-color1: var(--DJ-background-color);
+  --DJ-background-color2: rgb(38, 38, 38);
+  --DJ-background-color3: rgb(45, 45, 45);
+  --DJ-color: rgb(175, 175, 175);
+  --DJ-button-color_Hover: rgb(210, 210, 210);
 }
 
 body {
-    background-color: var(--DJ-background-color);
-    color: var(--DJ-color);
+  background-color: var(--DJ-background-color);
+  color: var(--DJ-color);
 }
 
 button,
 input,
 textarea,
 select {
-    background-color: var(--DJ-background-color2);
-    border-color: var(--DJ-background-color3);
-    border-style: solid;
-    border-width: 0.2rem;
-    color: var(--DJ-color);
-    font-family: inherit;
-    font-size: inherit;
+  background-color: var(--DJ-background-color2);
+  border-color: var(--DJ-background-color3);
+  border-width: 0.2rem;
+  color: var(--DJ-color);
 }
 
-button:hover,
-button:focus,
+button:hover, button:focus,
 input[type=button]:hover,
 input[type=button]:focus,
 input[type=submit]:hover,
 input[type=submit]:focus {
-    background-color: var(--DJ-background-color3);
-    border-color: var(--DJ-background-color2);
-    color: var(--DJ-button-color_Hover);
-    cursor: pointer;
-}
+  background-color: var(--DJ-background-color3);
+  border-color: var(--DJ-background-color2);
+  color: var(--DJ-button-color_Hover);
+  cursor: pointer;
+}/*# sourceMappingURL=Simple.css.map */
