@@ -1,0 +1,524 @@
+//#region CSS Reset
+html
+    border-style: solid
+    border-width: 0
+    box-sizing: border-box
+    font-size: 62.5%
+    *
+        border-style: inherit
+        border-width: inherit
+        box-sizing: inherit
+        max-width: 100% //If removed, aply it to img.
+    body
+        *
+            font-family: inherit
+//#endregion
+
+//#region Vars & root
+:root
+    //#region Dauw_Jonas Default Vars
+    //#region Main Colors
+    --DJ-D-Primary-color: rgb(0, 90, 0)
+    --DJ-D-PrimaryVariant-color: rgb(0, 60, 0)
+    --DJ-D-Secondary-color: rgb(229, 229, 0)
+    //#endregion
+    //#region General
+    --DJ-D-background-color: rgb(25, 25, 25)
+    --DJ-D-background-color0: rgb(32, 32, 32)
+    --DJ-D-background-color1: var(--DJ-D-background-color)
+    --DJ-D-background-color2: rgb(38, 38, 38)
+    --DJ-D-background-color3: rgb(45, 45, 45)
+    --DJ-D-background-color4: rgb(50, 50, 50)
+    //#endregion
+    //#region Text
+    --DJ-D-color: rgb(175, 175, 175)
+    --DJ-D-font-family: 'Gelasio', serif
+    --DJ-D-font-size: 2rem
+    --DJ-D-selection: rgba(0, 60, 60, .8)
+    //#endregion
+    //#region Link
+    --DJ-D-Link-color: rgb(0, 175, 0)
+    --DJ-D-Link-Hover_Select-color: rgba(0, 225, 0, .75)
+    //#endregion
+    //#region Input Text
+    --DJ-D-input-text-background-color: rgb(38, 38, 38)
+    --DJ-D-input-text-border-color: rgb(52, 57, 61)
+    //#endregion
+    //#region Button
+    --DJ-D-button-background-color: rgb(0, 95, 0)
+    --DJ-D-button-border-color: rgb(0, 60, 0)
+    --DJ-D-button-color: rgb(210, 210, 210)
+    --DJ-D-button-color_Hover: rgb(210, 210, 210)
+    //#endregion
+    //#region Scrollbar
+    --DJ-D-scrollbar-width: inherit
+    --DJ-D-scrollbar-border-width: .2rem
+    --DJ-D-scrollbar-thumb-border-radius: 0rem
+    --DJ-D-scrollbar-track-background-color: rgb(15, 15, 15)
+    --DJ-D-scrollbar-thumb-background-color: rgb(60, 60, 60)
+    --DJ-D-scrollbar-track-background-color_Hover: rgb(80, 80, 80)
+    --DJ-D-scrollbar-track-background-color_Active: rgb(70, 70, 70)
+    --DJ-D-scrollbar-corner-background-color: rgb(20, 20, 20)
+    //#endregion
+    //#endregion
+    //#region Dauw_Jonas Vars
+    //#region General
+    --DJ-background-color: var(--DJ-D-background-color)
+    --DJ-background-color0: var(--DJ-D-background-color0)
+    --DJ-background-color1: var(--DJ-D-background-color1)
+    --DJ-background-color2: var(--DJ-D-background-color2)
+    --DJ-background-color3: var(--DJ-D-background-color3)
+    --DJ-background-color4: var(--DJ-D-background-color4)
+    //#endregion
+    //#region Text
+    --DJ-color: var(--DJ-D-color)
+    --DJ-font-family: var(--DJ-D-font-family)
+    --DJ-font-size: var(--DJ-D-font-size)
+    --DJ-selection: var(--DJ-D-selection)
+    //#endregion
+    //#region Link
+    --DJ-Link-color: var(--DJ-D-Link-color)
+    --DJ-Link-Hover_Select-color: var(--DJ-D-Link-Hover_Select-color)
+    //#endregion
+    //#region Input Text
+    --DJ-input-text-background-color: var(--DJ-D-input-text-background-color)
+    --DJ-input-text-border-color: var(--DJ-D-input-text-border-color)
+    //#endregion
+    //#region Button
+    --DJ-button-background-color: var(--DJ-D-button-background-color)
+    --DJ-button-border-color: var(--DJ-D-button-border-color)
+    --DJ-button-color: var(--DJ-D-button-color)
+    --DJ-button-color_Hover: var(--DJ-D-button-color_Hover)
+    //#endregion
+    //#region Scrollbar
+    --DJ-scrollbar-width: var(--DJ-D-scrollbar-width)
+    --DJ-scrollbar-border-width: var(--DJ-D-scrollbar-border-width)
+    --DJ-scrollbar-thumb-border-radius: var(--DJ-D-scrollbar-thumb-border-radius)
+    --DJ-scrollbar-track-background-color: var(--DJ-D-scrollbar-track-background-color)
+    --DJ-scrollbar-thumb-background-color: var(--DJ-D-scrollbar-thumb-background-color)
+    --DJ-scrollbar-track-background-color_Hover: var(--DJ-D-scrollbar-track-background-color_Hover)
+    --DJ-scrollbar-track-background-color_Active: var(--DJ-D-scrollbar-track-background-color_Active)
+    --DJ-scrollbar-corner-background-color: var(--DJ-D-scrollbar-corner-background-color)
+    //#endregion
+    //#endregion
+//#endregion
+
+//#region Elements
+body
+    background-color: var(--DJ-background-color)
+    color: var(--DJ-color)
+    font-family: var(--DJ-font-family)
+    font-size: var(--DJ-font-size)
+    margin: 0
+
+//#region h
+h1,
+h2,
+h3,
+h4
+    text-align: center
+h4
+    margin: 1rem 0
+//#endregion
+
+::selection
+    background-color: var(--DJ-selection)
+
+*:focus
+    outline: 2px solid var(--DJ-Link-Hover_Select-color)
+    outline-offset: -2px
+a,
+button,
+input,
+textarea,
+select
+    transition: all .15s, outline-offset 0s, outline 0s
+
+//#region Link
+a
+    color: var(--DJ-Link-color)
+    &.active
+        color: var(--DJ-Link-Hover_Select-color)
+    &:hover
+        color: var(--DJ-Link-Hover_Select-color)
+    &.img
+        text-decoration: none
+//#endregion
+
+//#region Inputs
+button,
+input,
+textarea,
+select
+    background-color: var(--DJ-background-color2)
+    border-color: var(--DJ-background-color3)
+    border-radius: .75rem
+    border-style: solid
+    border-width: .4rem
+    color: var(--DJ-button-color)
+    font-size: inherit
+    text-decoration: none
+    &:hover,
+    &:focus
+        background-color: var(--DJ-background-color3)
+        border-color: var(--DJ-background-color2)
+
+button,
+input[type=button],
+input[type=submit],
+.button,
+.btn,
+.submit,
+select
+    &:hover
+        cursor: pointer
+
+textarea,
+input[type=text]
+    background-color: var(--DJ-background-color0)
+
+textarea,
+input[type=text]
+    &:hover,
+    &:focus
+        background-color: var(--DJ-background-color1)
+
+header
+    button,input,textarea,select
+        &:hover,&:focus
+            border-color: var(--DJ-background-color0)
+
+//#region Main Button
+button,
+.button,
+.btn,
+input[type=button],
+input[type=submit],
+.submit
+    background-color: var(--DJ-button-background-color)
+    border-color: var(--DJ-button-border-color)
+    color: var(--DJ-button-color)
+    font-weight: bold
+    padding: .5rem 1.5rem
+
+%Main-Button
+    background-color: var(--DJ-button-border-color)
+    border-color: var(--DJ-button-background-color)
+    color: var(--DJ-button-color_Hover)
+
+button,
+input[type=button],
+input[type=submit],
+.button,
+.btn,
+.submit
+    &:hover,
+    &:focus
+        @extend %Main-Button
+
+header
+    button,
+    input[type=button],
+    input[type=submit],
+    .button,
+    .btn,
+    .submit
+        &:hover,
+        &:focus
+            @extend %Main-Button
+//#endregion
+
+//#region Med Button
+.btn-med,
+input[type=button],
+input[type=submit]
+    &.btn-med
+        background-color: var(--DJ-background-color2)
+        border-color: var(--DJ-background-color3)
+        font-weight: normal
+
+.btn-med,
+input[type=button],
+input[type=submit]
+    &.btn-med
+        &:hover,
+        &:focus
+            background-color: var(--DJ-background-color3)
+            border-color: var(--DJ-background-color2)
+
+header
+    .btn-med,
+    input[type=button],
+    input[type=submit]
+        &.btn-med
+            &:hover,
+            &:focus
+                border-color: var(--DJ-background-color0)
+//#endregion
+
+//#region Low Button
+.btn-low,
+input[type=button],
+input[type=submit],
+input[type=text]
+    &.btn-low
+        border-radius: 0
+        border-width: 0
+        font-weight: normal
+        padding: 0
+        background-color: unset
+//#endregion
+//#endregion
+
+iframe
+    border-width: 0
+
+//#region Scrollbar
+::-webkit-scrollbar
+    width: var(--DJ-scrollbar-width)
+    height: var(--DJ-scrollbar-width)
+::-webkit-scrollbar-track
+    background-color: var(--DJ-scrollbar-track-background-color)
+::-webkit-scrollbar-thumb
+    background-color: var(--DJ-scrollbar-thumb-background-color)
+    border-radius: var(--DJ-scrollbar-thumb-border-radius)
+::-webkit-scrollbar-thumb:hover
+    background-color: var(--DJ-scrollbar-track-background-color_Hover)
+::-webkit-scrollbar-thumb:active
+    background-color: var(--DJ-scrollbar-track-background-color_Active)
+::-webkit-scrollbar-corner
+    background-color: var(--DJ-scrollbar-corner-background-color)
+//#endregion
+//#endregion
+
+//#region Class
+.displayNone
+    display: none
+
+.font-italic
+    font-style: italic
+.font-oblique
+    font-style: oblique
+//#endregion
+
+//#region Header
+header
+    background-color: var(--DJ-background-color2)
+    padding: 1rem 0
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-block-end: 0.83em
+    margin-left: auto
+    margin-right: auto
+    nav
+        display: inline-block
+        margin: .5rem 0
+    ul
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        list-style-type: none
+        margin: 0
+        padding: 0
+    li
+        display: inline-block
+    li
+        a
+            background-color: #3A3F44
+            border: 2px solid grey
+            display: inline-block
+            padding: 1rem .5rem
+            text-align: center
+            //transition-duration: .2s
+    @media (min-width:500px)
+        li
+            a
+                border-right: 0
+                padding: 1.5rem
+        nav
+            margin: .5rem
+    li
+        a
+            &:hover,
+            &:focus
+                background-color: #34393D
+        &:last-child a
+            border-right: 2px solid grey
+//#endregion
+
+//#region Main
+main
+    margin: 0
+    width: 100%
+    @media (min-width:1200px)
+        margin: 1rem
+        width: calc(100% - 2rem)
+    section
+        margin: 1.2rem 0
+
+//#region Img-Text
+.Img-Text
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    text-align: left
+    h3
+        text-align: left
+    >:first-child
+        align-content: center
+    div blockquote
+        margin: 0
+    @media (min-width:1000px)
+        flex-wrap: nowrap
+    &.Med
+        >:first-child
+            max-height: 100%
+            max-width: 100%
+        img
+            display: inline-block
+            max-height: 25%
+            max-width: 50%
+        div
+            margin: 0
+            width: 100%
+            h3:first-child
+                margin-top: 0
+            blockquote
+                margin: 0
+        a
+            display: block
+
+        @media (min-width:1000px)
+            >a:first-child
+                max-height: 25%
+                max-width: 50%
+                img
+                    max-height: 100%
+                    max-width: 100%
+                div
+                    margin-left: 1rem
+                h3
+                    text-align: left
+    &.Big
+        >*
+            width: 100%
+            &:first-child
+                max-height: 100%
+                max-width: 100%
+        @media (min-width:1000px)
+            &:first-child
+                max-height: 100%
+                max-width: 60%
+            h3
+                text-align: left
+            >:nth-child(2)
+                margin-left: .5rem
+//#endregion
+
+//#region VerList - Vertical List
+.VerList
+    align-items: center
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    justify-content: center
+
+.ListItem
+    align-items: flex-start
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    margin-bottom: 2rem
+    h4
+        text-align: left
+    a
+        text-align: right
+        width: 30%
+    p
+        margin: .5rem 0
+    div
+        margin-left: .5rem
+        width: 70%
+    @media (min-width:500px)
+    @media (min-width:1200px)
+        div
+            width: 50%
+
+//#region Flex
+.FlexContainer
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+.FlexItem
+    display: block
+    align-items: center
+    justify-content: center
+    max-width: 100%
+    margin: .3rem 0
+    &.Video
+        display: flex
+        align-items: center
+        justify-content: center
+        max-height: 31.5rem
+        width: 56rem
+        aspect-ratio: 16/9
+        margin: .3rem 0
+        overflow: hidden
+        @media (min-width:1200px)
+            margin: .6rem
+.VideoImg
+    cursor: pointer
+//#endregion
+//#endregion
+//#endregion
+
+//#region Footer
+footer
+    align-items: center
+    background-color: var(--DJ-background-color2)
+    display: flex
+    flex-direction: column
+    margin-block-start: 0.83em
+    padding: 1rem
+    address
+        &, a
+            font-style: normal
+            margin: 0
+            text-align: center
+        a[href="/Dauw_Jonas/"]
+            color: var(--DJ-D-Link-color)
+        a[href="/Dauw_Jonas/"]:hover,
+        a[href="/Dauw_Jonas/"]:focus
+            color: var(--DJ-D-Link-Hover_Select-color)
+    div
+        margin-left: auto
+        margin-right: auto
+        width: fit-content
+    a
+        display: inline-block
+
+div.OfficialLink
+    margin: .5rem auto
+    p
+        margin: 0
+        text-align: center
+//#endregion
+
+//#region iframe
+div.Steam iframe,
+iframe.Steam
+    height: 19rem
+    max-width: 100%
+    width: 64.6rem
+
+div.GoG iframe,
+iframe.GoG
+    height: 22rem
+    max-width: 100%
+    width: 36rem
+//#endregion

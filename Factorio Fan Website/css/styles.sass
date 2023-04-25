@@ -1,0 +1,49 @@
+//Vars & root
+
+:root
+    //Text
+    --DJ-selection: #d85d00cc
+    //Link 
+    --DJ-Link-color: #ff7200
+    --DJ-Link-Active-color: #ad4f02
+    --DJ-Link-Hover_Select-color: #ff9946
+    //Button
+    --DJ-button-background-color: #82471A
+    --DJ-button-border-color: #592D10
+    --DJ-button-color: #D1D1D1
+
+//General
+
+::selection
+    background-color: var(--DJ-selection)
+
+a
+    color: var(--DJ-Link-color)
+    &.active
+        color: var(--DJ-Link-Active-color)
+    &:hover
+        color: var(--DJ-Link-Hover_Select-color)
+
+:focus
+    outline: 2px solid var(--DJ-Link-Hover_Select-color)
+
+//Header
+
+//Logo
+
+div.WebsiteLogo
+    display: inline-block
+    margin: .2rem .5rem
+    width: fit-content
+    a
+        display: inline-block
+        text-decoration: none
+    h1
+        color: #C87328
+        font-size: 4rem
+        font-weight: normal
+        margin: 0
+        text-shadow: .5rem -.1rem .2rem #000000
+        -webkit-text-stroke: .075rem #733C14
+
+//Footer

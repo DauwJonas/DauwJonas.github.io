@@ -1,0 +1,41 @@
+//General
+
+section
+    margin: 1.2rem 0
+
+//Wiki
+
+section#Wiki
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    width: 100%
+    div div
+        width: auto
+
+div#WikiText
+    flex-shrink: 0
+    max-width: 100%
+    min-width: 265px
+    a
+        display: inline-block
+    div
+        align-items: center
+        display: flex
+        div
+            display: block
+            width: 150px
+            a img
+                display: inline-block
+                margin-right: 1rem
+        h3
+            margin-top: 0
+        p
+            margin-bottom: 0
+
+@media (min-width:1000px)
+    section#Wiki
+        flex-wrap: nowrap
+
+//Video

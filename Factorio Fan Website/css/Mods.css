@@ -1,24 +1,11 @@
-/****
- *  General
- */
-
-
-/*
- *  Intro
- */
-
-section#Intro div p {}
-
-section#Intro div>:nth-child(2) {
-    margin-bottom: 0;
+section#Intro {
+  margin-bottom: 0;
 }
-
 section#Intro ul {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
-
 section#Intro ul li p {
-    margin-top: .5rem;
-    margin-bottom: 1rem;
-}
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=Mods.css.map */
