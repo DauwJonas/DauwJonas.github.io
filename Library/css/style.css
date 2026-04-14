@@ -8,6 +8,7 @@ html * {
   border-style: inherit;
   border-width: inherit;
   box-sizing: inherit;
+  font-variant-ligatures: no-common-ligatures;
   max-width: 100%;
 }
 html body * {
@@ -25,7 +26,7 @@ html body * {
   --DJ-D-background-color3: rgb(45, 45, 45);
   --DJ-D-background-color4: rgb(50, 50, 50);
   --DJ-D-color: rgb(175, 175, 175);
-  --DJ-D-font-family: "Gelasio", serif;
+  --DJ-D-font-family: 'Gelasio', serif;
   --DJ-D-font-size: 2rem;
   --DJ-D-selection: rgba(0, 60, 60, .8);
   --DJ-D-Link-color: rgb(0, 175, 0);
