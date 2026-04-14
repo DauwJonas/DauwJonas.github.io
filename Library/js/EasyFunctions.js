@@ -87,12 +87,12 @@ function ReadFile(url) {
     let fileData;
     const xhr = new XMLHttpRequest();
     xhr.open("GET", url, false);
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
         if (this.readyState !== 4) return;
         if (this.status !== 200) return;
         fileData = this.responseText;
     };
-    xhr.onerror = function() {};
+    xhr.onerror = function () { };
     xhr.send();
     return fileData;
 }
@@ -103,6 +103,7 @@ function Download(src, fileName = "Img", fileExtension = "png") {
     nDownloadEl.setAttribute("download", fileName + "." + fileExtension);
     nDownloadEl.setAttribute("href", src);
     nDownloadEl.setAttribute("style", "display:none;")
+    nDownloadEl.setAttribute("target", "_blank");
     document.body.append(nDownloadEl);
     nDownloadEl.click();
     nDownloadEl.remove();
@@ -116,19 +117,19 @@ function Download(src, fileName = "Img", fileExtension = "png") {
     var pushState = history.pushState;
     var replaceState = history.replaceState;
 
-    history.pushState = function() {
+    history.pushState = function () {
         pushState.apply(history, arguments);
         window.dispatchEvent(new Event('pushstate'));
         window.dispatchEvent(new Event('locationChange'));
     };
 
-    history.replaceState = function() {
+    history.replaceState = function () {
         replaceState.apply(history, arguments);
         window.dispatchEvent(new Event('replacestate'));
         window.dispatchEvent(new Event('locationChange'));
     };
 
-    window.addEventListener('popstate', function() {
+    window.addEventListener('popstate', function () {
         window.dispatchEvent(new Event('locationChange'))
     });
 })();
